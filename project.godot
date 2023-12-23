@@ -1,0 +1,98 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Object",
+"class": "InputSettings",
+"language": "GDScript",
+"path": "res://scripts/ParseInput/InputSettings.gd"
+}, {
+"base": "Object",
+"class": "OutputGenerator",
+"language": "GDScript",
+"path": "res://scripts/OutputGenerator.gd"
+}, {
+"base": "Node",
+"class": "ParseSampleInput",
+"language": "GDScript",
+"path": "res://scripts/ParseInput/parseInput.gd"
+}, {
+"base": "Object",
+"class": "Propagator",
+"language": "GDScript",
+"path": "res://scripts/Propagator/Propagator.gd"
+}, {
+"base": "Propagator",
+"class": "PropagatorAc3",
+"language": "GDScript",
+"path": "res://scripts/Propagator/PropagatorAc3.gd"
+}, {
+"base": "Propagator",
+"class": "PropagatorAc4",
+"language": "GDScript",
+"path": "res://scripts/Propagator/PropagatorAc4.gd"
+}, {
+"base": "Object",
+"class": "Synthetizer",
+"language": "GDScript",
+"path": "res://scripts/synthetizer.gd"
+}, {
+"base": "Object",
+"class": "deque",
+"language": "GDScript",
+"path": "res://scripts/utils/deque.gd"
+}, {
+"base": "Object",
+"class": "parseTiledModel",
+"language": "GDScript",
+"path": "res://scripts/ParseInput/parseTiledModel.gd"
+}, {
+"base": "Object",
+"class": "utils",
+"language": "GDScript",
+"path": "res://scripts/utils/utils.gd"
+} ]
+_global_script_class_icons={
+"InputSettings": "",
+"OutputGenerator": "",
+"ParseSampleInput": "",
+"Propagator": "",
+"PropagatorAc3": "",
+"PropagatorAc4": "",
+"Synthetizer": "",
+"deque": "",
+"parseTiledModel": "",
+"utils": ""
+}
+
+[application]
+
+config/name="Model Synthesis Implement"
+config/icon="res://icon.png"
+
+[debug]
+
+settings/stdout/verbose_stdout=true
+settings/physics_interpolation/enable_warnings=false
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"

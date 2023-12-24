@@ -11,10 +11,13 @@ static func computeSupport(settings : InputSettings) -> InputSettings:
 	var transition : Array = settings.transition
 	for c in range(N) : 
 		var numDirections : int = 2 * settings.numDims
-		var supportingC : Array = [[]]
+		
+		var supportingC : Array = []
+		supportingC.resize(numDirections)
+		
+		
 		var supportCountC : Array = [numDirections]
 		for dir in range(numDirections) : 
-		
 			var supportingDir : Array = []
 			var dim : int = dir/2
 			var sign_ : bool= dir % 2 == 0

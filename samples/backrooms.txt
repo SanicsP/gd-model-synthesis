@@ -1,0 +1,5 @@
+Example model created by Paul Merrell.  Do not insert or delete lines from this file.
+
+x, y, and z extents
+6 7 1
+

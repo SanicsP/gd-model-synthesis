@@ -155,11 +155,12 @@ func synthesize(synthesizeTimeMicro : float) :
 
 	var hasBoundary : Array = []
 	hasBoundary.resize(6)
-
+	
+	print("solving")
+	
 	for xStep in numSteps[0] : 
 		blockStart[0] = setupStepValues(0 , xStep , shifts , maxBlockStart , hasBoundary)
 		printIteration(blockStart[0] , printMode[0] , indentation[0] , "x")
-
 		for yStep in numSteps[1] : 
 			blockStart[1] = setupStepValues(1 , yStep , shifts , maxBlockStart , hasBoundary)
 			printIteration(blockStart[1] , printMode[1] , indentation[1] , "y")
@@ -186,7 +187,7 @@ func synthesize(synthesizeTimeMicro : float) :
 								print("failled .Retrying")
 						else : 
 							if modifyInBlocks : 
-								#restorBlock(blockStart)
+								restoreBlock(blockStart)
 								pass
 							print("Failled. Max Attemps")
 	if lastPrint >= 0 : 
@@ -282,6 +283,13 @@ func saveBlock(blockStart : Array) :
 			for z in range(offset[2] , blockSize[2] + offset[2]) : 
 				savedBlock[x][y][z] = model[x+blockStart[0] - offset[0]][y+blockStart[1] - offset[1]][z+blockStart[2] - offset[2]]
 
+func restoreBlock(blockStart : Array) : 
+	for x in range(offset[0] , blockSize[0] + offset[0]) :
+		for y in range(offset[1] , blockSize[1] + offset[1]) :
+			for z in range(offset[2] , blockSize[2] + offset[2]) :
+				model[x+blockStart[0] - offset[0]][y+blockStart[1]-offset[1]][z+blockStart[2]-offset[2]] = savedBlock[x][y][z]
+				
+				
 func synthesizeBlock(blockStart : Array , hasBoundary :Array) -> bool: 
 	propagator.resetBlock()
 
@@ -300,7 +308,8 @@ func synthesizeBlock(blockStart : Array , hasBoundary :Array) -> bool:
 			for z in range(offset[2] , blockSize[2] + offset[2]) : 
 				var label : int = propagator.pickLabel(x , y , z)
 
-				if label == - 1 : 
+				if label == - 1 :
+					print("contradiction") 
 					return false  
 				model[x + blockStart[0] - offset[0]][y + blockStart[1] - offset[1]][z + blockStart[2] - offset[2]] = label
 	

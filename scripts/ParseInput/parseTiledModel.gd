@@ -33,22 +33,24 @@ static func parseTiledModel(settings) -> InputSettings:
 	for i in range((xSize+1)*zSize) : 
 		modelStr += " " + modelFile.get_line()
 	
-	#modelStr = modelStr.replace("\n","  ")
 	
 	var example_values = convert_model_str(modelStr , xSize , ySize , zSize)
 	##-------------------------------------------------------------------------
-
+	
 	# Read in the labels in the example model
 	var buffer : int = 0
 	var current_label : int = example_values[buffer]
+	
+	
 	for z in range(zSize) :
 		for x in range(xSize):
 			for y in range(ySize) :
 				example[x][y][z] = current_label
 				buffer += 1
-				if buffer < x*y*z:
+				if buffer <xSize*ySize*zSize : 
 					current_label = example_values[buffer]
-
+	
+	
 	
 	#print("sizes : " , String(xSize) + " " , String(ySize) + " " , String(zSize))
 	
@@ -94,6 +96,7 @@ static func parseTiledModel(settings) -> InputSettings:
 	labelCount.resize(numLabels)
 	for i in range(numLabels) :
 		labelCount[i] = 0
+		
 	for x in range(xSize) : 
 		for y in range(ySize) : 
 			for z in range(zSize) :

@@ -14,7 +14,8 @@ func _ready():
 	
 	parser.open("sample.xml")
 	
-	var settings = null
+	var settings = InputSettings.new()
+	settings.useAc4 = false
 	
 	while parser.read() == OK :
 		if parser.get_node_type() == XMLParser.NODE_ELEMENT and parser.get_node_name() == "tiledmodel" :
@@ -25,17 +26,20 @@ func _ready():
 	
 	print("width , height , length : " , settings.size)
 	
-	#print("transition {trans}".format({"trans" : settings.transition[2]}))
+	print("transition {trans}".format({"trans" : settings.transition[2]}))
 	
-	print("queue test")
+	
 	var synth : Synthetizer = Synthetizer.new(settings , 5)
+	
 	print("synthetizing...")
+	
 	synth.synthesize(5)
-	print("ok")
-	synth.printModel()
-	
-	
+	print("end")
 	OutputGenerator.GenerateTiledModel(settings , synth.model , "output/test.txt")
+	
+	
+	
+	#OutputGenerator.GenerateTiledModel(settings , synth.model , "output/test.txt")
 	pass # Replace with function body.
 
 

@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://3d_models/backrooms/tiles/backrooms.jpg" type="Texture" id=1]
+
+[sub_resource type="SpatialMaterial" id=1]
+flags_unshaded = true
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( 0.318, 1.044, 0.858 )
+uv1_triplanar = true
+uv2_scale = Vector3( 2, 2, 1 )
+
+[node name="tile0" type="MeshInstance"]
+
+[node name="CSGBox2" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, -3.03192e-08, -0.693623, 0, 1, -4.37114e-08, 0.0258789, 4.63672, -5.52988 )
+width = 12.0
+height = 0.903055
+depth = 12.0
+material = SubResource( 1 )
+
+[node name="CSGBox" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0129395, -0.0298977, 0.0318632 )
+width = 12.0
+height = 0.903055
+depth = 12.0
+material = SubResource( 1 )
+
+[node name="CSGBox3" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0129395, -0.0298977, 0.0318632 )
+width = 12.0
+height = 0.903055
+depth = 12.0
+material = SubResource( 1 )

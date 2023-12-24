@@ -97,13 +97,19 @@ func setBlockLabel(label : int , position : Array) -> bool :
 	
 	var updateQueue : deque = deque.new()
 	updateQueue.addFront(position)
-
+	inQueue[x][y][z] = true
+	
+	
 	while updateQueue.size() > 0 : 
 		var update : Array = updateQueue.front()
 		var x_1 : int = update[0]
 		var y_1 : int = update[1]
 		var z_1 : int = update[2]
-
+		
+		#TODO: Check if this makes things faster or not.
+		# Check if any possible labels are still left.
+		#If not we have failed.
+		
 		var is_Possible : bool = false 
 		for i in numLabels : 
 			if possibleLabels[x_1][y_1][z_1][i] : 
@@ -146,8 +152,8 @@ func propagate(xB : int , yB : int , zB : int , dir : int , updateQueue : deque)
 		3 : yA += 1
 		4 : zA -= 1
 		5 : zA += 1
+	
 	# Do not propagate if this goes outside the bounds of the block.
-
 	if settings.periodic : 
 		match dir : 
 			0 : if xA < offset[0] : xA += size[0]

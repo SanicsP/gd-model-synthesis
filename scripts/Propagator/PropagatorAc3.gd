@@ -177,7 +177,12 @@ func propagate(xB : int , yB : int , zB : int , dir : int , updateQueue : deque)
 		if possibleLabels[xA][yA][zA][a] : 
 			var acceptable : bool = false 
 			for b in numLabels : 
-				var validTransition : bool = transition[dim][b][a] if positive else transition[dim][a][b]
+				var validTransition : bool = false 
+				if positive :
+					validTransition = transition[dim][b][a]  
+				else : 
+					validTransition = transition[dim][a][b]
+				
 				if validTransition and possibleLabels[xB][yB][zB][b] : 
 					acceptable = true
 					break

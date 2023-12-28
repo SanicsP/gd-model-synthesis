@@ -17,7 +17,7 @@ static func GenerateTiledModel(settings : InputSettings , model : Array , output
 			for y in size[1] :
 				var label = model[x][y][z]
 				if label < 10 : 
-					outFile.store_string(" ")
+					outFile.store_string("")
 				outFile.store_string(str(label) + " ")
 			outFile.store_line("")
 		outFile.store_line("")

@@ -17,8 +17,16 @@
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 24 )
 skeleton = NodePath("../tile2")
 
+[node name="tile8" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 12 )
+skeleton = NodePath("../tile2")
+
 [node name="tile6" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 48 )
+skeleton = NodePath("../tile2")
+
+[node name="tile7" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 60 )
 skeleton = NodePath("../tile2")
 
 [node name="tile2" parent="." instance=ExtResource( 9 )]
@@ -26,28 +34,19 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 36 )
 skeleton = NodePath("")
 
 [node name="tile1" parent="." instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 12 )
-
-[node name="tile4" parent="." instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 0 )
 
 [node name="tile3" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 60 )
-
-[node name="tile7" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0, 72 )
-
-[node name="tile8" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 108, 0, 60 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 72 )
 
 [node name="tile10" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 108, 0, 72 )
+
+[node name="tile30" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 84, 0, 72 )
 
 [node name="tile40" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0, 48 )
-
-[node name="tile65" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 108, 0, 48 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0, 72 )
 
 [node name="tile11" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 72 )
@@ -67,51 +66,52 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 72 )
 [node name="tile16" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 72 )
 
-[node name="tile17" parent="." instance=ExtResource( 5 )]
+[node name="tile82" parent="." instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 72 )
-
-[node name="tile66" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 60 )
-
-[node name="tile30" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 84, 0, 48 )
-id = 1
-
-[node name="tile18" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 60 )
-skeleton = NodePath("../tile17")
-
-[node name="tile19" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 48 )
-skeleton = NodePath("../tile17")
 
 [node name="tile20" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 36 )
-skeleton = NodePath("../tile17")
+skeleton = NodePath("")
+
+[node name="tile83" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 48 )
+skeleton = NodePath("")
+
+[node name="tile84" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 60 )
+skeleton = NodePath("")
 
 [node name="tile21" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 24 )
-skeleton = NodePath("../tile17")
+skeleton = NodePath("")
 
 [node name="tile22" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12 )
-skeleton = NodePath("../tile17")
+skeleton = NodePath("")
 
 [node name="tile36" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 48 )
-skeleton = NodePath("../tile17")
+skeleton = NodePath("")
+
+[node name="tile66" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 60 )
+skeleton = NodePath("")
 
 [node name="tile45" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 36 )
-skeleton = NodePath("../tile17")
+skeleton = NodePath("")
+
+[node name="tile72" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 36 )
+skeleton = NodePath("")
 
 [node name="tile54" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 24 )
-skeleton = NodePath("../tile17")
+skeleton = NodePath("")
 
 [node name="tile63" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 12 )
-skeleton = NodePath("../tile17")
+skeleton = NodePath("")
 
 [node name="tile23" parent="." instance=ExtResource( 6 )]
 
@@ -144,7 +144,11 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 84, 0, 0 )
 skeleton = NodePath("../tile23")
 
 [node name="tile31" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 108, 0, 12 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 108, 0, 0 )
+skeleton = NodePath("../tile23")
+
+[node name="tile67" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0, 0 )
 skeleton = NodePath("../tile23")
 
 [node name="tile32" parent="." instance=ExtResource( 10 )]
@@ -192,6 +196,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0, 24 )
 [node name="tile49" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 108, 0, 24 )
 
+[node name="tile65" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 108, 0, 12 )
+
 [node name="tile50" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 36 )
 
@@ -219,6 +226,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 108, 0, 36 )
 [node name="tile59" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 48 )
 
+[node name="tile68" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 60 )
+
 [node name="tile60" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 48 )
 
@@ -230,9 +240,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, 48 )
 
 [node name="tile64" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 48 )
-
-[node name="tile68" parent="." instance=ExtResource( 10 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 60 )
 
 [node name="tile69" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 60 )
@@ -247,7 +254,19 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, 60 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 60 )
 
 [node name="tile74" parent="." instance=ExtResource( 10 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 84, 0, 60 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 108, 0, 60 )
 
 [node name="tile75" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 84, 0, 60 )
+
+[node name="tile79" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0, 60 )
+
+[node name="tile78" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 84, 0, 48 )
+
+[node name="tile76" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0, 48 )
+
+[node name="tile77" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 108, 0, 48 )

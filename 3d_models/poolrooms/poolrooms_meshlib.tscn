@@ -1,0 +1,64 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://3d_models/poolrooms/tiles_models/tile2.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://3d_models/poolrooms/tiles_models/tile4.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://3d_models/poolrooms/tiles_models/tile1.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://3d_models/poolrooms/tiles_models/tile3.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://3d_models/poolrooms/tiles_models/tile7.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://3d_models/poolrooms/tiles_models/tile8.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://3d_models/poolrooms/tiles_models/tile5.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://3d_models/poolrooms/tiles_models/tile6.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://3d_models/poolrooms/tiles_models/tile0.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://3d_models/poolrooms/1K-pool_tiles-diffuse.jpg" type="Texture" id=10]
+
+[sub_resource type="SpatialMaterial" id=1]
+flags_unshaded = true
+albedo_color = Color( 0.839216, 0.847059, 0.898039, 1 )
+albedo_texture = ExtResource( 10 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="tile0" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.89414, 0, -1.34717 )
+mesh = ExtResource( 9 )
+material/0 = SubResource( 1 )
+
+[node name="tile1" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.89414, 0, -1.34717 )
+mesh = ExtResource( 3 )
+material/0 = SubResource( 1 )
+
+[node name="tile2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.89414, 0, -1.34717 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="tile3" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.89414, 0, -1.34717 )
+mesh = ExtResource( 4 )
+material/0 = SubResource( 1 )
+
+[node name="tile4" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.89414, 0, -1.34717 )
+mesh = ExtResource( 2 )
+material/0 = SubResource( 1 )
+
+[node name="tile5" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.89414, 0, -1.34717 )
+mesh = ExtResource( 7 )
+material/0 = SubResource( 1 )
+
+[node name="tile6" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.89414, 0, -1.34717 )
+mesh = ExtResource( 8 )
+material/0 = SubResource( 1 )
+
+[node name="tile7" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.89414, 0, -1.34717 )
+mesh = ExtResource( 5 )
+material/0 = SubResource( 1 )
+
+[node name="tile8" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.89414, 0, -1.34717 )
+mesh = ExtResource( 6 )
+material/0 = SubResource( 1 )

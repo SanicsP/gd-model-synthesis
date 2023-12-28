@@ -52,7 +52,7 @@ func removeLabel(label : int , position : Array) -> bool :
 	var y : int = position[1]
 	var z : int = position[2]
 
-	if possibleLabels[x][y][z][label] : 
+	if not possibleLabels[x][y][z][label] : 
 		return true
 	
 	possibleLabels[x][y][z][label] = false
@@ -81,7 +81,7 @@ func removeLabel(label : int , position : Array) -> bool :
 		if not is_Possible : 
 			return false 
 		for dir in 6 : 
-			updateQueue = propagate(x_1 , y_1 , z_1 , dir , updateQueue)
+			propagate(x_1 , y_1 , z_1 , dir , updateQueue)
 		inQueue[x_1][y_1][z_1] = false
 		updateQueue.removeFront()
 

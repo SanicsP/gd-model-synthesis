@@ -239,9 +239,9 @@ func addGround(blockStart : Array) :
 
 		position[2] = 0
 
-		for x in range(offset[0] , blockSize[0]) : 
+		for x in range(offset[0] , blockSize[0]+offset[0]) : 
 			position[0] = x
-			for y in range(offset[1], blockSize[1]) : 
+			for y in range(offset[1], blockSize[1]+ offset[1]) : 
 				position[1] = y
 				if y == blockSize[1] - 1 : 
 					propagator.setBlockLabel(settings.ground , position)

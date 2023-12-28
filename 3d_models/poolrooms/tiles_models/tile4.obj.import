@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tile4.obj-99c5c71eb4b07072663da81420114d3c.mesh"
+
+[deps]
+
+files=[ "res://.import/tile4.obj-99c5c71eb4b07072663da81420114d3c.mesh" ]
+
+source_file="res://3d_models/poolrooms/tiles_models/tile4.obj"
+dest_files=[ "res://.import/tile4.obj-99c5c71eb4b07072663da81420114d3c.mesh", "res://.import/tile4.obj-99c5c71eb4b07072663da81420114d3c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

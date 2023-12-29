@@ -223,11 +223,11 @@ func addBoundary(blockStart : Array , dir : int) :
 	
 	modelPos[dim0] = blockPos[dim0] + blockStart[dim0] - offset[dim0]
 
-	for i in range(offset[dim1] , blockSize[dim1]) : 
+	for i in range(offset[dim1] , blockSize[dim1]+offset[dim1]) : 
 		blockPos[dim1] = i 
 		modelPos[dim1] = i + blockStart[dim1] - offset[dim1]
 		
-		for j in range(offset[dim2],offset[dim2]) : 
+		for j in range(offset[dim2],blockSize[dim2] + offset[dim2]) : 
 			blockPos[dim2] = j
 			modelPos[dim2] = j + blockStart[dim2] - offset[dim2]
 			propagator.setBlockLabel(getLabel(modelPos) , blockPos)

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <sample>
-    <tiledmodel name="backrooms.txt" width="40" length="40" height="2"/>
+    <tiledmodel name="backrooms.txt" width="25" length="25" height="10"/>
 
 </sample>

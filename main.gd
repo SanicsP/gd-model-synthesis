@@ -94,7 +94,7 @@ func _ready():
 	
 	var settings = InputSettings.new()
 	
-	settings.useAc4 = false
+	settings.useAc4 = true
 	
 	while parser.read() == OK :
 		if parser.get_node_type() == XMLParser.NODE_ELEMENT and parser.get_node_name() == "tiledmodel" :
